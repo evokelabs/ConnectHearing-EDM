@@ -21,17 +21,32 @@ subject: Confirming your hearing appointment
             <table style="width: 0%;">
               <tr>
                 <td>
-                  <p class="small-text-center" style="color: #fff;">Date: [*DATE*]</p>
+                   <p class="small-text-center" style="color: #fff;">
+                     Date: &lt;
+                     <appointment day="">&gt;, &lt;
+                       <appointment date="">&gt;
+                       </appointment>
+                     </appointment>
+                   </p>
                 </td>
                 <td style="width: 15%;">
                 </td>
                 <td style="text-align: left;">
-                  <p class="text-center" style="color: #fff;">Time: [*TIME*]</p>
+                <p class="text-center" style="color: #fff;">
+                  Time: &lt;<appointment time="">&gt;
+                  </appointment>
+                </p>
                 </td>
               </tr>
             </table>
           </center>
-          <p class="text-center" style="color: #fff;">Address: [*ADDRESS*]</p>
+              <p class="text-center" style="color: #fff;">Address: &lt;<appt location="" address="" 1="">&gt; &lt;
+                  <appt location="" address="" 2="">&gt; &lt;<appt location="" address="" 3="">&gt;, &lt;<appt location="" city="">
+                        &gt;</appt>
+                    </appt>
+                  </appt>
+                </appt>
+              </p>
           <spacer size="20"></spacer>
         </columns>
       </row>
@@ -40,16 +55,17 @@ subject: Confirming your hearing appointment
       <row>
         <columns>
           <spacer size-lg="30" size-sm="30"></spacer>
-          <h1 class="text-center" style="font-size: 18px;">Hi [*FIRST NAME*],</h1>
+          <h1 class="text-center" style="font-size: 18px;">Hi &lt;<patient first="" name="">&gt;, </patient>
+          </h1>
           <spacer size="15"></spacer>
           <p class="text-center">Just a friendly reminder to let you know your appointment is coming up.
           </p>
           <spacer size="15"></spacer>
           <p class="text-center">We’ll contact you again 24 hours prior to your appointment. If you have any questions,
-            or if you can’t make the appointment, please contact us on:<br> <strong>[*PHONE NUMBER*]</strong></p>
+            or if you can’t make the appointment, please contact us on:<br> <strong><appt location="" tel=""></appt></strong></p>
           <spacer size="15"></spacer>
           <p class="text-center">Kind Regards,</p>
-          <p class="text-center"><strong>Your Connect Hearing Team [*LOCATION*]</strong>
+          <p class="text-center"><strong>Your Connect Hearing Team &lt;<appt location="" name="">&gt;</appt></strong>
           </p>
           <spacer size="20"></spacer>
         </columns>
@@ -110,7 +126,7 @@ subject: Confirming your hearing appointment
           </p>
           <spacer size="15"></spacer>
           <p class="text-center">Kind Regards,</p>
-          <p class="text-center"><strong>Your Connect Hearing Team [*LOCATION*]</strong></p>
+          <p class="text-center"><strong>Your Connect Hearing Team &lt;<appt location="" name="">&gt;</appt></strong></p>
           <spacer size="30"></spacer>
         </columns>
       </row>
@@ -137,7 +153,8 @@ subject: Confirming your hearing appointment
           <div class="hide-for-large">
             <center>
               <spacer size="20">
-                <img src="http://s2433.gridserver.com/clients/ConnectHearing/connecthearing-stamp-mobile.png"
+                <img
+                  src="https://www.connecthearing.com.au/getmedia/b957935c-dda9-44bc-bcf6-bc3360f51f64/connecthearing-stamp-1.aspx"
                   style="max-width: 155px">
             </center>
           </div>
