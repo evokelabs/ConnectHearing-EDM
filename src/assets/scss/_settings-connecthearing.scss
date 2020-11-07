@@ -15,28 +15,29 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
+$primary-color: #ED6B06;
 $secondary-color: #333333;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #F1F2EE;
-$medium-gray: #cacaca;
+$light-gray: #FBFBFB;
+$medium-gray: #DBD8D5;
 $dark-gray: #333333;
-$black: #0a0a0a;
+$purple: #E10098;
+$black: #333333;
 $white: #fefefe;
-$pre-color: #ff6c00;
-$link-color: #ff6c00;
-$global-width: 600px;
+$pre-color: #ED6B06;
+$link-color: rgb(32, 218, 205);
+$global-width: 700px;
 $global-width-small: 95%;
-$global-gutter: 60px;
-$body-background: #F1F2EE;
+$global-gutter: 50px;
+$body-background: #E5E5E5;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 3px;
+$global-radius: 15px;
 $global-rounded: 500px;
-$global-breakpoint: $global-width + $global-gutter;
+$global-breakpoint: 650px;
 
 // 2. Grid
 // -------
@@ -54,18 +55,19 @@ $block-grid-gutter: $global-gutter;
 // 4. Typography
 // -------------
 
-$global-font-color: $secondary-color;
-$body-font-family: Proxima-Light, Arial, sans-serif;
+$global-font-color: $black;
+$body-font-family: Arial,
+sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.3;
-$global-font-size: 14px;
+$global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
-$header-font-weight: $global-font-weight;
-$h1-font-size: 34px;
-$h2-font-size: 26px;
-$h3-font-size: 24px;
+$header-font-weight: bold;
+$h1-font-size: 16px;
+$h2-font-size: 20px;
+$h3-font-size: 20px;
 $h4-font-size: 20px;
 $h5-font-size: 20px;
 $h6-font-size: 18px;
@@ -82,36 +84,32 @@ $subheader-font-weight: $global-font-weight;
 $subheader-margin-top: 4px;
 $subheader-margin-bottom: 8px;
 $hr-width: $global-width;
-$hr-border: 1px solid $black;
+$hr-border: 2px solid $primary-color;
 $hr-margin: 20px auto;
 $anchor-text-decoration: none;
 $anchor-color: $primary-color;
 $anchor-color-visited: $anchor-color;
-$anchor-color-hover: darken($primary-color, 10%);
+$anchor-color-hover: darken($anchor-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
 
 // 5. Button
 // ---------
 
-$button-padding: (
-  tiny: 4px 8px 4px 8px,
+$button-padding: (tiny: 2px 5px 2px 5px,
   small: 5px 10px 5px 10px,
-  default: 10px 26px 10px 26px,
-  large: 10px 20px 10px 20px
-);
-$button-font-size: (
-  tiny: 10px,
+  default: 15px 10px 15px 10px,
+  large: 10px 20px 10px 20px);
+$button-font-size: (tiny: 16px,
   small: 12px,
-  default: 14px,
-  large: 12px
-);
-$button-color: $secondary-color;
+  default: 20px,
+  large: 20px);
+$button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
-$button-margin: 0 0 0 0;
-$button-background: $white;
-$button-border: 1px solid $link-color;
+$button-margin: 0 0 5px 0;
+$button-background: #00BFB3;
+$button-border: 2px solid $button-background;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 

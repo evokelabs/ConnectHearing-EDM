@@ -1,53 +1,42 @@
 // Typography
-h1,
-h2,
-h3,
+h1 {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+h2 {
+  color: $primary-color;
+}
+
 h4,
 h5 {
   color: $primary-color;
-  font-size: 50px;
   line-height: 40px;
   letter-spacing: 0px;
   hyphens: none;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   font-weight: 900;
-  font-family: 'ProximaNova-Black', Arial Black, sans-serif;
 
 }
 
-h1 {
-  font-size: 40px;
-  text-transform: capitalize;
-  letter-spacing: -2px;
-
-}
-
-h3 {
-  color: $purple;
-  font-size: $h3-font-size;
-  line-height: 100%;
-  letter-spacing: -1px;
-  
-}
 
 h4 {
-  font-size: 27px;
-  letter-spacing: -1px;
   font-family: 'ProximaNova-ExtraBold', Arial Black, sans-serif;
-  line-height: 100%;
-  color: $secondary-color;
+  mso-line-height-rule: exactly;
+  line-height: 120%;
+  line-height: 26px;
+  color: $primary-color;
+  font-weight: bold;
 }
 
 p,
 h6 {
-  line-height: 100%;
+  mso-line-height-rule: exactly;
   hyphens: none;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   letter-spacing: 0px;
-  font-size: 20px;
-  font-weight: 300;
 
 }
 
@@ -60,21 +49,35 @@ h6 {
   font-size: 16px;
 }
 
+.gallery-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  height: 30px;
+}
+
 .promixa-nova-regular {
   font-family: 'ProximaNova-Regular';
   line-height: 100%;
 }
 
 .promixa-nova-bold {
-  font-family: 'ProximaNova-Extrabold', Arial Black, sans-serif;
+  mso-line-height-rule: exactly;
   line-height: 100%;
+  line-height: 22px;
+  font-family: 'ProximaNova-Extrabold', Arial Black, sans-serif;
 }
 
-p.header-small a {
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  color: $link-color;
+.header-small {
+  font-size: 12px !important;
+  font-size: 12px;
+  color: #4D4D4D;
+}
+
+p.header-small a,
+p.header-small {
+  line-height: 100%;
 }
 
 .px-left {
@@ -90,12 +93,12 @@ a {
 }
 
 a[href^='tel'] {
-  color: inherit;
   text-decoration: none;
 }
 
 .bold {
   font-weight: 600;
+
 }
 
 hr {
@@ -115,11 +118,45 @@ hr {
   font-size: 1.1em;
 }
 
-small, small p, small a  {
+small,
+small p,
+small a {
   font-size: 16px;
 }
-small, small p {
+
+small,
+small p {
   color: $secondary-color;
+}
+
+.table-text {
+  font-size: 12px !important;
+  font-size: 12px;
+}
+
+.table-text a {
+  font-size: 14px !important;
+  font-size: 14px;
+}
+
+.number-text-class {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: #4D4D4D;
+  margin-bottom: 5px;
+}
+
+.opt-text-class {
+  font-size: 10px;
+  color: #505050;
+  font-weight: bold;
+}
+
+.date-text-class {
+  font-size: 10px;
+  color: #505050;
+  line-height: 13px;
 }
 
 
@@ -147,6 +184,11 @@ table.button.inline-block table td {
   padding: 0px !important;
 }
 
+.tnc {
+  font-size: 10px !important;
+  font-size: 10px;
+}
+
 // Colors
 
 .pink {
@@ -162,6 +204,10 @@ table.button.inline-block table td {
   color: $medium-gray;
   font-size: 14px;
   line-height: 1.3rem;
+}
+
+.teal {
+  color: #00BFB3;
 }
 
 .black-text p a,
@@ -221,9 +267,26 @@ table.button.inline-block table td {
   background-color: $purple;
 }
 
+.background-background {
+  background-color: $body-background;
+}
+
+.darkpurple-background {
+  background-color: #9139FF;
+}
+
+.teal-background {
+  background-color: #00BFB3;
+}
+
+.orange-background {
+  background-color: #ED6B06;
+}
+
 .primary-color {
   color: $primary-color;
 }
+
 .charcoal-blue {
   color: #002d56;
 }
@@ -266,6 +329,21 @@ table.button.inline-block table td {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+table.button table td {
+  width: 420px;
+  text-align: center;
+}
+
+table.button table td a {
+  text-align: center;
+}
+
+.stamp-background {
+  background-image: url('http://s2433.gridserver.com/clients/ConnectHearing/connecthearing-stamp.png');
+  background-repeat: no-repeat;
+  background-position: 97% 20%;
+}
+
 
 
 //Expanded fix for outlook
@@ -277,6 +355,50 @@ table.button.inline-block table td {
 }
 
 @media only screen and (max-width: #{$global-breakpoint}) {
+
+  .gallery-text {
+    height: 35px;
+  }
+
+  h1 {
+    font-size: 14px !important;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px !important;
+    font-size: 18px;
+    line-height: 110% !important;
+    line-height: 110%;
+    letter-spacing: -0.009em;
+  }
+
+  p {
+    font-size: 14px !important;
+    font-size: 14px;
+    line-height: 120% !important;
+    line-height: 120%;
+  }
+
+  .table-text {
+    font-size: 14px !important;
+    font-size: 14px;
+  }
+
+  .table-text a {
+    font-size: 14px !important;
+    font-size: 14px;
+  }
+
+  .header-small {
+    font-size: 10px !important;
+    font-size: 10px;
+  }
+
+  table.button table td {
+    text-align: center;
+  }
+
   table.body .columns {
     padding: 20px !important;
   }
@@ -298,51 +420,55 @@ table.button.inline-block table td {
     line-height: 30px !important;
   }
 
-  small, small p, small a  {
-    font-size: 15px;
-    font-size: 15px !important;
-  }
-}
-@media all {
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  .tnc {
+    font-size: 10px !important;
+    font-size: 10px;
   }
 
+  .number-text-class {
+    font-size: 28px;
+    font-size: 28px !important;
+    font-weight: bold;
+    letter-spacing: -0.02em;
+    color: #4D4D4D;
+    margin-bottom: 5px;
+  }
+
+  .opt-text-class {
+    font-size: 10px;
+    font-size: 10px !important;
+    color: #505050;
+    font-weight: bold;
+  }
+
+  .date-text-class {
+    font-size: 10px;
+    font-size: 10px !important;
+    color: #505050;
+    line-height: 13px;
+  }
+
+  table.body .columns {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+
+  }
+
+  .stamp-background {
+    background-image: none !important;
+  }
+
+}
+
+@media all {
+
+  /* latin */
   @font-face {
-    font-family: 'Open Sans';
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  @font-face {
-    font-family: ProximaNova-Regular;
-    // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Regular.otf');
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Regular.otf');
-  }
-
-  @font-face {
-    font-family: ProximaNova-Light;
-    // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Light.otf');
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Light.otf');
-  }
-
-  @font-face {
-    font-family: ProximaNova-Extrabold;
-    // src: url('https://training.flexigroup.com.au/resources/PromixaNova-ExtraBold.otf');
-    src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-ExtraBold.otf');
-  }
-
-  @font-face {
-  font-family: ProximaNova-Black;
-   // src: url('https://training.flexigroup.com.au/resources/ProximaNova-Black.otf');
-  src: url('https://s2433.gridserver.com/clients/Flexigroup/fonts/ProximaNova-Black.otf')
   }
 }
