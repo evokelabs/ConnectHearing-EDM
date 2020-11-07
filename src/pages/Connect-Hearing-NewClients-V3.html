@@ -58,8 +58,8 @@ subject: Confirming your hearing appointment
                 <td>
                  <p class="small-text-center">Date: &lt;
                    <appointment day="">&gt;, &lt;
+                  </appointment>
                      <appointment date="">&gt;
-                     </appointment>
                    </appointment>
                  </p>
                 </td>
@@ -100,7 +100,18 @@ subject: Confirming your hearing appointment
         </columns>
       </row>
     </container>
-    {{> covid}}
+    <container class="mediumgray-background">
+    <row>
+      <columns>
+        <spacer size-lg="40" size-sm="20"></spacer>
+        {{>healthsafety}}
+        <spacer size-lg="10" size-sm="5"></spacer>
+        <p class="text-center">Kind Regards,</p>
+        <p class="text-center"><strong>Your Connect Hearing Team &lt;<appt location="" name="">&gt;</appt></strong></p>
+        <spacer size-lg="20" size-sm="10"></spacer>
+      </columns>
+    </row>
+    </container>
     <container>
       <row>
         <div class="show-for-large">

@@ -26,8 +26,8 @@ $dark-gray: #333333;
 $purple: #E10098;
 $black: #333333;
 $white: #fefefe;
-$pre-color: #ED6B06;
-$link-color: rgb(32, 218, 205);
+$pre-color: #333333;
+$link-color: #333333;
 $global-width: 700px;
 $global-width-small: 95%;
 $global-gutter: 50px;
@@ -35,7 +35,7 @@ $body-background: #E5E5E5;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 15px;
+$global-radius: 4px;
 $global-rounded: 500px;
 $global-breakpoint: 650px;
 
@@ -87,8 +87,8 @@ $hr-width: $global-width;
 $hr-border: 2px solid $primary-color;
 $hr-margin: 20px auto;
 $anchor-text-decoration: none;
-$anchor-color: $primary-color;
-$anchor-color-visited: $anchor-color;
+$anchor-color: $secondary-color;
+$anchor-color-visited: $secondary-color;
 $anchor-color-hover: darken($anchor-color, 10%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
@@ -98,17 +98,17 @@ $stat-font-size: 40px;
 
 $button-padding: (tiny: 2px 5px 2px 5px,
   small: 5px 10px 5px 10px,
-  default: 15px 10px 15px 10px,
+  default: 10px 36px 10px 36px,
   large: 10px 20px 10px 20px);
 $button-font-size: (tiny: 16px,
   small: 12px,
-  default: 20px,
+  default: 16px,
   large: 20px);
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: bold;
 $button-margin: 0 0 5px 0;
-$button-background: #00BFB3;
+$button-background: #ED6B06;
 $button-border: 2px solid $button-background;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;

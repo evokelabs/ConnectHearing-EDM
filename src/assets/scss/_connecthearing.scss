@@ -88,9 +88,6 @@ p.header-small {
   margin-top: 5px;
 }
 
-a {
-  text-decoration: none;
-}
 
 a[href^='tel'] {
   text-decoration: none;
@@ -161,10 +158,6 @@ small p {
 
 
 // Buttons
-
-table.button table td {
-  padding: 7px !important;
-}
 
 table.button.bold table td a {
   text-transform: uppercase;
@@ -330,7 +323,6 @@ table.button.inline-block table td {
 }
 
 table.button table td {
-  width: 420px;
   text-align: center;
 }
 

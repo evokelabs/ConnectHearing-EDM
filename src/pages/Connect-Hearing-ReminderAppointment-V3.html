@@ -24,9 +24,9 @@ subject: Confirming your hearing appointment
                    <p class="small-text-center" style="color: #fff;">
                      Date: &lt;
                      <appointment day="">&gt;, &lt;
+                       </appointment>
                        <appointment date="">&gt;
                        </appointment>
-                     </appointment>
                    </p>
                 </td>
                 <td style="width: 15%;">
@@ -81,52 +81,8 @@ subject: Confirming your hearing appointment
     <container>
       <row>
         <columns>
-          <!-- HR Code Insert Start -->
-          <table width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td height="1" style="border-top:1px solid #ff6c00; font-size:1px; height:1px; line-height:1px">
-                &nbsp;
-              </td>
-            </tr>
-          </table>
-          <!-- HR Code Insert End -->
           <spacer size="30"></spacer>
-          <h2 class="text-center">IMPORTANT COVID-19 NOTICE:</h2>
-          <spacer size="10"></spacer>
-          <p class="text-center">
-            As outlined on the call when we booked your appointment, we need to follow strict rules around clinic
-            visits
-            as
-            a
-            consequence of the Coronavirus (COVID-19) outbreak.
-          </p>
-          <spacer size="4"></spacer>
-          <p class="text-center" style="font-style: italic; font-weight: bold;">
-            To ensure both your safety and wellbeing and that of our team members, we’d remind you if you feel
-            unwell
-            or
-            have flu
-            like symptoms prior to your appointment, that you call us to reschedule to a later date.
-          </p>
-          <spacer size="4"></spacer>
-          <p class="text-center">
-            We also need to comply to Social Distancing laws which only permit one person in the clinic at a time.
-            Please
-            note, if
-            you have someone accompanying you, they will need to wait outside the clinic during your appointment.
-          </p>
-          <spacer size="4"></spacer>
-          <p class="text-center">
-            Rest assured that Connect Hearing is fully committed to maintaining rigorous standards and hygiene
-            practices
-            in
-            line
-            with ALL Government guidelines to ensure the safety and wellbeing of our customers and clinic team
-            members.
-          </p>
-          <spacer size="15"></spacer>
-          <p class="text-center">Kind Regards,</p>
-          <p class="text-center"><strong>Your Connect Hearing Team &lt;<appt location="" name="">&gt;</appt></strong></p>
+          {{>healthsafety}}
           <spacer size="30"></spacer>
         </columns>
       </row>
@@ -138,27 +94,10 @@ subject: Confirming your hearing appointment
         </columns>
       </row>
     </container>
-    <container class="stamp-background">
+    <container>
       <row>
         <columns>
-          <spacer size-lg="40" size-sm="20"></spacer>
-          <h1 class="text-center" style="font-size: 18px;">Our Better Hearing Guarantee*</h1>
-          <spacer size-lg="10" size-sm="5"></spacer>
-          <p class="text-center">Trusted advice and personal service</p>
-          <p class="text-center">
-            Lifetime Free Care for your hearing devices</p>
-          <p class="text-center">Hearing professionals focused on the best solution for you</p>
-          <p class="text-center">A genuine price-match promise</p>
-          <p class="text-center">A no-strings, 30-day money back guarantee</p>
-          <div class="hide-for-large">
-            <center>
-              <spacer size="20">
-                <img
-                  src="https://www.connecthearing.com.au/getmedia/b957935c-dda9-44bc-bcf6-bc3360f51f64/connecthearing-stamp-1.aspx"
-                  style="max-width: 155px">
-            </center>
-          </div>
-          <spacer size="25"></spacer>
+        {{>commitment}}
         </columns>
       </row>
     </container>
@@ -177,10 +116,5 @@ subject: Confirming your hearing appointment
       </row>
     </container>
     <spacer size="7"></spacer>
-    <p class="text-center tnc">
-      *Terms and conditions apply. See <a href="https://www.connecthearing.com.au/about-us/better-hearing-guarantee/"
-        target="_blank">connecthearing.com.au/about-us/better-hearing-guarantee</a>
-      for more details.
-    </p>
   </wrapper>
 </wrapper>
