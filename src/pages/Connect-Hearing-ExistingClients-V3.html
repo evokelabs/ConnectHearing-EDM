@@ -33,7 +33,8 @@ subject: Confirming your hearing appointment
         <columns>
           <spacer size-lg="15" size-sm="30"></spacer>
           <center>
-            <h1 class="text-center">Hi &lt;<patient first="" name="">&gt;, </patient></h1>
+            <h1 class="text-center">Hi &lt;&lt;<patient first="" name="">&gt;&gt;, </patient>
+            </h1>
             <spacer size="4"></spacer>
             <p class="text-center">Thank you for arranging your appointment with us. Our team of qualified hearing
               professionals look forward to providing you with personalised service and trusted hearing advice.
@@ -54,27 +55,22 @@ subject: Confirming your hearing appointment
               <tr>
                 <td>
                   <p class="small-text-center" style="color: #fff;">
-                    Date: &lt;
-                    <appointment day="">&gt;, &lt;
-                                          </appointment>
-                      <appointment date="">&gt;
-                      </appointment>
-
+                    Date: &lt;&lt;<appointment day="">&gt;&gt;, &lt;&lt;</appointment><appointment date="">&gt;&gt;</appointment>
                   </p>
                 </td>
                 <td style="width: 15%;">
                 </td>
                 <td style="text-align: left;">
                   <p class="text-center" style="color: #fff;">
-                    Time: &lt;<appointment time="">&gt;
-                    </appointment>
+                    Time: &lt;&lt;<appointment time="">&gt;&gt;</appointment>
                   </p>
                 </td>
               </tr>
             </table>
           </center>
-          <p class="text-center" style="color: #fff;">Address: &lt;<appt location="" address="" 1="">&gt; &lt;
-                <appt location="" address="" 2="">&gt; &lt;<appt location="" address="" 3="">&gt;, &lt;<appt location="" city="">&gt;</appt>
+          <p class="text-center" style="color: #fff;">Address: &lt;&lt;<appt location="" address="" 1="">&gt;&gt;
+              &lt;&lt;<appt location="" address="" 2="">&gt;&gt; &lt;&lt;<appt location="" address="" 3="">&gt;&gt;, &lt;&lt;<appt
+                      location="" city="">&gt;&gt;</appt>
                 </appt>
               </appt>
             </appt>
@@ -111,7 +107,9 @@ subject: Confirming your hearing appointment
            {{>healthsafety}}
           <spacer size="15"></spacer>
           <p class="text-center">Kind Regards,</p>
-          <p class="text-center"><strong>Your Connect Hearing Team &lt;<appt location="" name="">&gt;</appt></strong></p>
+          <p class="text-center"><strong>Your Connect Hearing Team &lt;&lt;<appt location="" name="">&gt;&gt;</appt>
+              </strong>
+          </p>
           <spacer size="30"></spacer>
         </columns>
       </row>
